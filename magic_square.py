@@ -22,3 +22,10 @@ for i in range(len(marks)):
 	print('c',i,'=',c[i])
 print('d1=',d1)
 print('d2=',d2)
+
+for i in range(len(c)-1):
+	if(r[i]!=r[i+1] or c[i]!=c[i+1] or r[i]!=c[i] or d1!=d2):
+		print('not magic square')
+		break
+else:
+	print('magic square')
